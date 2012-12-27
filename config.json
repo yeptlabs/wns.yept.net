@@ -1,0 +1,24 @@
+// wnApp default configuration.
+{
+
+	"title": "WNS Framework",
+
+	// This configuration extends the default configuration.
+	// If you want to change something, copy the file:
+	// "source/config/wnAppConfig.json"
+	// And edit.
+
+	"components": {
+		"urlManager": {
+			"rules":{
+				"<controller:api>/<action:class>/<name:\w+>":"<controller>/<action>"
+			}
+		},
+		"http": {
+			"serveralias": "localhost",
+			"errorPage": "site/error",
+			"defaultController":"site"
+		}
+	}
+
+}
