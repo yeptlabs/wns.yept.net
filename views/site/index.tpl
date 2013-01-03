@@ -1,7 +1,8 @@
 # Build a `Fast`, `Scalable` and `Powerful` web application
 
-#### **WNS** is a framework built on **[Node.JS](http://nodejs.org)** machine for easily building high performance web applications. 
+#### [WNS](/) is a framework built on [Node.JS](http://nodejs.org) machine for easily building high performance web applications. 
 <code>
+/* INTUITIVE - Built-in class system */
 {
 	/* Class dependencies */
 	extend: ['wnComponent'],
@@ -23,8 +24,53 @@
 };
 </code>
 
-## Some of WNS features
+<code>
+/* INTERATIVE - Built-in interative console */
+[*] Console active in wnServer: SERVER#1
 
+$ this.getServer(1).getApplication('wns').getConfig('id')
+[*] Executing: this.getServer(1).getApplication('wns').getConfig('id')
+[*] 'app-wns'
+
+$ this.instanceOf('wnModule')
+[*] Executing: this.instanceOf('wnModule')
+[*] true
+
+$ this.setConfig({ debug: true })
+[*] Executing: this.setConfig({ debug: true })
+[*] true
+
+$ this.getConfig('debug')
+[*] this.getConfig('debug')
+[*] true
+
+$ this.doSomething(
+</code>
+
+<code>
+/* MUTABLE - Overwrite any core class as you want */
+
+// Create a file name wnModule.js inside classes/ directory
+
+{
+	public:
+	{
+		randomProp: true		
+	},
+	methods:
+	{
+		getInverseOfRandomProp: function ()
+		{
+			return !(randomProp);
+		}
+	}
+};
+
+// This will overwrite the getInverseOfRandomProp() from the source class wnModule,
+// And add some other public properties to the class.
+</code>
+
+## Some of WNS features
 
  - **NODEJS** `Builded on top of Node.js`
  - **INSPIRED** `Ispired on Yii Framework`

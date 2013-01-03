@@ -35,6 +35,25 @@ body {
 	color: #6D7B48;
 	letter-spacing: -2px;
 	font-size: 41px;
+	text-shadow: 1px 1px 0px #4B5926;
+}
+
+#wnsnow {
+	display: block;
+	float: right;
+	padding: 12px 26px;
+	background-color: #8F9D6A;
+	color: white;
+	font: bold 23px Arial;
+	text-align: center;
+	border-radius: 6px;
+	box-shadow: 1px 2px 3px #BBB;
+	line-height: 31px;
+	border: 1px solid #6D7B48;
+	text-shadow: 1px 1px 2px #6D7B48;
+	letter-spacing: -1px;
+	position: relative;
+	top: 13px;
 }
 
 ul#menu {
@@ -44,12 +63,12 @@ ul#menu {
 ul#menu li {
 	display: block;
 	float: left;
-	height: 22px;
+	height: 24px;
 	margin-right: 5px;
 }
 
 ul#menu li a {
-	padding: 7px 13px;
+	padding: 9px 13px;
 	background: #D9D9D9;
 	color: #555;
 	font-weight: normal;
@@ -87,10 +106,75 @@ ul#menu li a {
 	padding: 11px;
 }
 
-#index h1 {
-	border: 0px;
-	padding: 0;
-	font-weight: normal;
+#content #site-index #slide {
+	display:block;
+	position:static;
+	height:480px;
+	overflow:hidden;
+}
+
+#content #site-index #slide-content {
+	width:10000px;
+}
+
+#content #site-index .slideArrow {
+	background: 6px 5px url(http://vasterad.com/themes/incredible/images/bg_direction_nav_left.png) no-repeat;
+	width: 25px;
+	height: 25px;
+	display: block;
+	float: left;
+	position: relative;
+	top: -460px;
+	cursor: pointer;
+}
+
+#content #site-index .slideArrow:hover {
+	background-color: #333;
+}
+
+#content #site-index .slideArrowLeft {
+	left: 8px;
+}
+
+#content #site-index .slideArrowRight {
+	background-image: url(http://vasterad.com/themes/incredible/images/bg_direction_nav_right.png);
+	float: right;
+	right: 8px;
+}
+
+#content #site-index #slide pre {
+	float:left;
+	width:902px;
+	margin-right:10px;
+	overflow:hidden;
+}
+
+#site-index #slide span.title {
+	display: block;
+	font: bold 20px Arial !important;
+	color: white;
+	letter-spacing: 2px;
+	text-align: center;
+	padding: 11px 17px 7px 20px;
+	background-color: #222;
+	width: 100%;
+	margin-top: -20px;
+	margin-left: -20px;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+	width: 905px;
+	text-shadow: 1px 1px 1px #111;
+}
+
+#content #site-index h1 {
+	font-size: 25px;
+	padding: 25px;
+	line-height: 31px;
+	border-left: 6px solid #D9D9D9;
+	color: #111;
+	width: 50%;
+	float: right;
+	margin: 0px;
 }
 
 #content #site-index h1 code {
@@ -102,7 +186,7 @@ ul#menu li a {
 #content #site-index h4 {
 	margin: 0;
 	font-weight: normal;
-	margin-top: 18px;
+	padding: 35px;
 }
 
 #content #site-index ul {

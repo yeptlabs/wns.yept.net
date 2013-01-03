@@ -46,6 +46,14 @@ module.exports = {
 		},
 
 		/**
+		 * Action: Examples
+		 */
+		actionExamples: function () {
+			this.title='Examples';
+			this.render('examples');
+		},
+
+		/**
 		 * Action: Cases
 		 */
 		actionCases: function () {
