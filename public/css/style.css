@@ -215,7 +215,7 @@ ul#menu li a {
 /* Markdown style */
 .md h1 {
 	font-size: 25px;
-	padding: 7px 10px;
+	padding: 15px 10px;
 	line-height: 19px;
 	border-left: 4px solid #D9D9D9;
 	margin: 20px 0px 10px 0px;
@@ -225,17 +225,17 @@ ul#menu li a {
 	padding: 7px 0px;
 	font-size: 20px;
 	border-bottom: 1px dashed #D9D9D9;
-	margin: 0px 5px 0px;
+	margin: 15px 0px 7px 5px;
 	color: #222;
 }
 .md h3 {
-	padding: 7px 0px;
-	font-size: 16px;
+	padding: 15px 0px;
+	font-size: 17px;
 	line-height: 20px;
 	color: #333;
 }
 .md h4 {
-	padding: 7px 0px;
+	padding: 15px 0px;
 	font-size: 14px;
 	line-height: 18px;
 	color: #444;
@@ -247,7 +247,7 @@ ul#menu li a {
 .md p,
 .md ul,
 .md ol {
-  margin: 20px 30px;
+  margin: 15px 15px;
 }
 .md img {
   max-width: 100%;

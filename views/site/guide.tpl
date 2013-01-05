@@ -1,6 +1,6 @@
 # Guide
 
-This guide will help you to join and understand this awesome world that is `WNS` framework.
+This guide will help you join and understand this awesome world that is `WNS` framework.
 
 ## Gettin' WNS
 
@@ -8,48 +8,60 @@ This guide will help you to join and understand this awesome world that is `WNS`
 
  * NodeJS ([how to install](https://github.com/joyent/node))
 
-### NPM mode
+### Installing using NPM
 
- Just type the following command:
+ Inside the directory you want to install **WNS** type the NPM command:
 
      $ npm install wnserver
 
- Then move the `wnserver` folder from inside of the `node_modules` folder to where you want.
+### Installing using GIT
 
-### Git mode
+ This mode requires the installation of [git](http://github.com)
 
- This mode requires the installation of `git`
+ Inside the directory you want to install **WNS** type the GIT command:
 
      $ git clone https://github.com/yeptlabs/wns.git
 
- Then to install all dependencies, just typing inside the wns folder:
+ Then to install all dependencies, just typing inside the **WNS** folder:
  
      $ npm install -d
 
-### Manual mode
+### Installing manually
 
  Just download the zip file and unzip somewhere.
+ Then type inside **WNS** folder:
+
+	 $ npm install -d
  
-## Your first application
+## Your first SERVER
 
-Your first step in WNS is to create your new application. Don't worry it's not that hard.
+Build your first **WNS Server** is very simple. Just follow the right instructions:
 
-### Copy from default
+### If you installed WNS using NPM:
 
-Inside the WNS folder have to files that are essential to run the server. (**default-config.json** and **default-index.js**)
+ Inside the folder that you installed using **NPM**, just type;
 
-Copy those files and rename it removing the `default-` from the name.
+#### On Unix:
 
-- Copy `default-config.json` to `config.json`;
-- Copy `default-index.js` to `index.js`;
+	 $ wns ./
 
-Now you have the default configuration of WNS.
+#### On Windows:
 
-### Apply some sauce
+	 $ node_modules/.bin/wns.bat ./
 
-To complete your first application creation, let's tell WNS how you want that application.
+### Or if you installed using GIT or MANUALLY:
 
-Edit `config.json` file and change this **{properties}**.
+ Inside the folder where you placed **WNS**, type the command:
+
+ 	 $ node bin/wns ./
+
+## Your first APPLICATION
+
+ Now that your first server is ready, you need now an application.
+
+ To build an application you just need to configure the file `config.json`.
+
+ Edit `config.json`, that has been generated at the **previous step**, file and configure the **{required properties}**.
 
 <code>
 // THIS IS THE DEFAULT SERVER CONFIGURATION
@@ -72,7 +84,7 @@ Edit `config.json` file and change this **{properties}**.
 // {Those} are the important things that you need to edit.
 </code>
 
-### Fire!
+## Fire!
 
 Now the most difficult step. To run it, just type:
 
@@ -81,8 +93,3 @@ Now the most difficult step. To run it, just type:
 Uff! So hard this part. But it's ready. Now you can see your new application running at:
 
 	http://127.0.0.1:{PORT THAT YOU CHOSE}/
-
-
-# Knowing other features
-
-Other stuff here, later.
