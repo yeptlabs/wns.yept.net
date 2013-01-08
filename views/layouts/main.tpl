@@ -20,7 +20,7 @@
 		<div id="body">
 
 			<div id="header">
-				<a href="https://github.com/yeptlabs/wns"><div id="wnsnow">Download WNS, bro!</div></a>
+				<a href="/site/guide"><div id="wnsnow">Download WNS, bro!</div></a>
 				<h1>wns.framework</h1>
 				<ul id='menu'>
 					<li><a href='/site/index'>Home</a></li>
@@ -75,7 +75,7 @@
 					}
 
 					var $codes = $('#site-index pre');
-					$codes.eq(0).before($('<div id="slide"><div id="slide-content"></div></div><span class="slideArrow slideArrowLeft"></span><span class="slideArrow slideArrowRight"></span>'));
+					$codes.eq(0).before($('<div class="slideShow"><div id="slide"><div id="slide-content"></div></div><span class="slideArrow slideArrowLeft"></span><span class="slideArrow slideArrowRight"></span><div>'));
 					$codes.appendTo($('#site-index #slide-content'));
 					$codes.eq(-1).clone().prependTo($('#site-index #slide-content'));
 					$codes=$('#site-index #slide-content').children();

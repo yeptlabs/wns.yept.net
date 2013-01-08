@@ -1,6 +1,6 @@
-# Build a `Fast`, `Scalable` and `Powerful` web application
+# It's time to build `Fast`, `Scalable` and `Powerful` web services
 
-#### [WNS](/) is a framework built on [Node.JS](http://nodejs.org) machine for easily building high performance web applications. 
+#### A **component-based**, **class-based** middleware framework built on [Node.JS](http://nodejs.org) machine for easily building **high-performance** web services. 
 <code>
 /* INTUITIVE - Built-in class system */
 {
