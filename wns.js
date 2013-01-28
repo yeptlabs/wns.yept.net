@@ -27,6 +27,15 @@ module.exports = {
 		 */
 		run: function ()
 		{
+			var self = this,
+				compress = self.getComponent('compress');
+			this.addListener('readyRequest',function (e,req) {
+				if (compress)
+					compress.compressRequest(req);
+				req.once('error',function (e,code,msg) {
+					self.e.log(msg+' - '+req.info.url+' ('+req.info.connection.remoteAddress+')','access');
+				});
+			});
 		}
 
 	}

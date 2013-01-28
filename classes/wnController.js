@@ -29,7 +29,7 @@ module.exports = {
 		 */
 		getView: function (view,data)
 		{
-			var view = this.app.getFile(this.app.getConfig('path').views+this.getControllerName()+'/'+view+'.tpl');
+			var view = this.app.getFile(this.request.getConfig('path').views+this.getControllerName()+'/'+view+'.tpl');
 				view = (new this.app.c.wnTemplate(view,false)).match(data?data:{});
 			if (this.markdown)
 			{
