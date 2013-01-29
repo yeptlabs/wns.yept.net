@@ -33,7 +33,7 @@ module.exports = {
 				view = (new this.app.c.wnTemplate(view,false)).match(data?data:{});
 			if (this.markdown)
 			{
-				var Prettify = require(cwd+this.app.getConfig('modulePath')+'public/prettify.js');
+				var Prettify = require(this.app.modulePath+'public/prettify.js');
 
 				var replacements = {}, i = 0;
  				view = view.replace(/\r\n|\n|\r/g, '&newline;').replace(/<code>(.*?)<\/code>/g,
