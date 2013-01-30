@@ -28,14 +28,37 @@ module.exports = {
 		run: function ()
 		{
 			var self = this,
-				compress = self.getComponent('compress');
+				compress = self.getComponent('compress'),
+				cache = self.getComponent('cache');
+
 			this.addListener('readyRequest',function (e,req) {
-				if (compress)
-					compress.compressRequest(req);
-				req.once('error',function (e,code,msg) {
-					self.e.log(msg+' - '+req.info.url+' ('+req.info.connection.remoteAddress+')','access');
+				req.once('run', function (eRun) {
+					if (compress)
+						compress.compressRequest(req);
+					if (req.template == '<file>')
+						req.cacheable = true;
+					if (cache)
+					{
+						if (req.cacheable && !req.error)
+						{
+							var cacheKey = 'request-'+req.info.url,
+								cached=cache.get(cacheKey);
+							if (!cached) 
+								req.once('send', function (e) {
+									if (req.cacheable && !req.error)
+										cache.set(cacheKey,req.data);
+								});
+							else
+							{
+								e.stopPropagation=true;
+								eRun.stopPropagation=true;
+								req.data = cached;
+								req.send();
+							}
+						}
+					}
 				});
-			});
+			});			
 		}
 
 	}
