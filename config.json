@@ -26,7 +26,7 @@
 			},
 			"defaultController":"site",
 			"contentType": {},
-			"serveralias": "localhost,wns.yept.com.br",
+			"serveralias": "localhost",
 			"path": {
 				"public": "public/",
 				"controllers": "controllers/",
