@@ -24,7 +24,7 @@
 				<h1>wns.framework</h1>
 				<ul id='menu'>
 					<li><a href='/site/index'>Home</a></li>
-					<li><a href='/api/'>API Reference</a></li>
+					<li><a href='/api/'>API</a></li>
 					<li><a href='/site/guide'>Guide</a></li>
 					<li><a href='/site/examples'>Examples</a></li>
 					<li><a href='/site/cases'>Cases</a></li>

@@ -1,0 +1,17 @@
+{
+	"name": "wns-wns-website",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"wnserver": "0.0.91",
+		"dustjs-linkedin": "~2.0.3",
+		"dustjs-helpers": "~1.1.1",
+		"markdown": "~0.5.0",
+		"node-static": "~0.7.1",
+		"wns-http-package": "0.0.8",
+		"wns-mvc-package": "0.0.5",
+		"wns-template-package": "0.0.1",
+		"winston": "~0.7.2",
+		"wns-winston-package": "*"
+	}
+}

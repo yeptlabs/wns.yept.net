@@ -35,11 +35,7 @@ module.exports = {
 		 */
 		actionIndex: function () {
 			this.title='API';
-			var classList = '';
-			for (c in this.app.c)
-			{
-				classList += new this.app.c.wnTemplate(this.listTpl).match({ name: c });
-			}
+			var classList=_.keys(this.app.c);
 			this.render('index',{ classList: classList });
 		},
 
